@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href="resources/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- WORK FROM INSIDE THIS CONTAINER-->
+      <h1>Rock Paper Scissors</h1>
+      <div id="welcome-screen">
+        <form class="form-group" id="name-form">
+          <div>
+            <label for="username">Your name</label>
+            <input class="form-control" type="text" name="username" id="username" placeholder="Enter name here..." />
+          </div>
+          <button class="btn btn-primary" id="start-game-button">Start Game!</button>
+        </form>
+      </div>
+      <div id="game-screen">
+        <div id="score-tally">
+          <p id="score">user: 0 v cpu: 0</p>
+        </div>
+        <form class="form-group" id="game-form">
+          <div>
+            <label for="user-selection">Select Your Choice</label>
+            <select class="custom-select" name="user-selection" id="user-selection">
+              <option value="rock">Rock</option>
+              <option value="paper">Paper</option>
+              <option value="scissors">Scissors</option>
+            </select>
+          </div>
+          <button class="btn btn-success" id="go-button">Go!</button>
+        </form>
+        <p id="game-history"></p>
+      </div>
+    </div>
+
+    <!-- Our own Scripts -->
+    <script src="resources/scripts/rock_paper_scissors.js"></script>
+    <script src="resources/scripts/index.js"></script>
+  </body>
+</html>
