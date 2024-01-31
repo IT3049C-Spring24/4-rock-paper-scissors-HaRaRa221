@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
-    <!-- Bootstrap Styles-->
-    <link rel="stylesheet" href="resources/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="resources/styles/styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- WORK FROM INSIDE THIS CONTAINER-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type your title here</title>
+  <!-- Bootstrap Styles-->
+  <link rel="stylesheet" href="resources/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="resources/styles/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- WORK FROM INSIDE THIS CONTAINER-->
+    <h1>Rock Paper Scissors</h1>
+
+    <div id="welcome-screen">
+      <form id="name-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input class="form-control" id="username" name="username" placeholder="Enter Name Here...">
+        </div>
+        <button class="btn btn-primary" type="button" id="start-game-button">Start Game!</button>
+      </form>
     </div>
 
-    <!-- Our own Scripts -->
-    <script src="resources/scripts/rock_paper_scissors.js"></script>
-    <script src="resources/scripts/index.js"></script>
-  </body>
+    <div id="game-screen">
+      <div id="score-tally">
+        <p id="score">User: 0 v CPU: 0</p>
+      </div>
+    </div>
+
+    <form id="game-form">
+      <div class="form-group">
+        <select name="user-selection" id="user-selection">
+          <option value="">Rock</option>
+          <option value="">Paper</option>
+          <option value="">Scissors</option>
+        </select>
+      </div>
+      <button class="btn btn-success" type="go-button" id="go-button">Go!</button>
+    </form>
+    <p id="game-history"></p>
+  </div>
+
+  </div>
+
+  <!-- Our own Scripts -->
+  <script src="resources/scripts/rock_paper_scissors.js"></script>
+  <script src="resources/scripts/index.js"></script>
+</body>
+
 </html>
