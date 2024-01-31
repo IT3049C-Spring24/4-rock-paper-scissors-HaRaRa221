@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Layout",
+      "setup": "npm install",
+      "run": "npm run test:layout",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Styling",
+      "setup": "npm install",
+      "run": "npm run test:styling",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Logic",
+      "setup": "npm install",
+      "run": "npm run test:logic",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 6
+    },
+    {
+      "name": "Controller",
+      "setup": "npm install",
+      "run": "npm run test:controller",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 6
+    }
+  ]
+}
